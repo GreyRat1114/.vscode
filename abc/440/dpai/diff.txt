@@ -1,0 +1,3 @@
+Comparing files a.out and B.OUT
+FC: no differences encountered
+
