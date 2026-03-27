@@ -19,7 +19,6 @@ void solve(){
         cout<<"No"<<'\n';
     }
     
-    
 }
 int main(){
     int t=1;
