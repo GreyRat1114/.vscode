@@ -1,0 +1,3 @@
+Comparing files aa.out and BB.OUT
+FC: no differences encountered
+
