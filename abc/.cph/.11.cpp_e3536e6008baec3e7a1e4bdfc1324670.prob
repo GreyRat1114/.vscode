@@ -1,0 +1,1 @@
+{"name":"Local: 11","url":"d:\\Vscode\\.vscode\\abc\\11.cpp","tests":[{"id":1775546505477,"input":"4\n3\n10\n7\n12","output":"YES\nNO\nYES\nNO"},{"id":1775547165759,"input":"5\n1\n4\n2\n9\n99","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\abc\\11.cpp","group":"local","local":true}

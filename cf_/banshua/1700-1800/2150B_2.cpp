@@ -37,42 +37,31 @@ void solve(){
     LL n;
     cin>>n;
     vector<LL> a(n+1,0);
+    LL s=0;
     for(int i=1;i<=n;i++){
         cin>>a[i];
+        s+=a[i];
     }
+    LL cnt=0;
     LL ans=1;
-    for(int i=1;i<=n;i++){
-        if(a[i]==0){
-            
-        }
-        if(i*2==n+1){
-            if(a[i]==1){
-                ans=ans;
-            }else if(a[i]==2){
-                ans=(ans*i*i)%mod;
-            }else{
-                cout<<0<<'\n';
-                return;                
-            }
-        }else if(i*2<=n){
-            if(a[i]==1||a[i]-2>n-2*i){
-                cout<<0<<'\n';
-                return;
-            }   
-            ans=(ans*((i*i)*getc(n-2*i,a[i]-2))%mod)%mod;
-            printf("{%lld}",ans);
-        }else{
-            if(a[i]==1){
-                ans=ans;
-            }else if(a[i]==2){
-                ans=(ans*(n-i)*(n-i))%mod;
-            }else{
-                cout<<0<<'\n';
-                return;                
-            }
-        }
-        
+    if(s!=n){
+        cout<<0<<'\n';
+        return;
     }
+    for(int i=n;i>=1;i--){
+        if(i*2<=n){
+            cnt+=2;
+        }else if(n%2==1&&i*2==n+1){
+            cnt+=1;
+        }
+        if(cnt<a[i]){
+            cout<<0<<'\n';
+            return;
+        }
+        ans=(ans*getc(cnt,a[i]))%mod;
+        cnt-=a[i];
+    }
+
     cout<<ans<<'\n';
 }
 int main(){
