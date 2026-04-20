@@ -1108,7 +1108,6 @@
 //         int r=lower_bound(xn+1,xn+s+1,L[i].x2)-xn;
 //         update(1,l,r-1,L[i].tag);
 //         ans+=1ll*tr[1].len*(L[i+1].y-L[i].y);
-
 //     }
 //     printf("%lld\n",ans);
 

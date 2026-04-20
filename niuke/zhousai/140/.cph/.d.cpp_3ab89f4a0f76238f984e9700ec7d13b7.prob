@@ -1,0 +1,1 @@
+{"name":"Local: d","url":"d:\\Vscode\\.vscode\\niuke\\zhousai\\140\\d.cpp","tests":[{"id":1776598228062,"input":"2\n4 1 2\n2 3 1 4\n8 2 4\n1 8 7 4 6 3 2 5","output":""},{"id":1776598230949,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\niuke\\zhousai\\140\\d.cpp","group":"local","local":true}
