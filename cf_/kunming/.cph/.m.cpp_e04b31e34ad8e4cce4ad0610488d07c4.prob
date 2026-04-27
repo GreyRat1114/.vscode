@@ -1,0 +1,1 @@
+{"name":"Local: m","url":"d:\\Vscode\\.vscode\\cf_\\kunming\\m.cpp","tests":[{"id":1777181205959,"input":"3\n5\n1 1 1\n0 0\n1 0\n5 0\n3 3\n0 5\n6\n2 4 1\n2 0\n4 0\n6 3\n4 6\n2 6\n0 3\n4\n3 3 1\n3 0\n6 3\n3 6\n0 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\cf_\\kunming\\m.cpp","group":"local","local":true}
