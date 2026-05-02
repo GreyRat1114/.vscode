@@ -6,44 +6,28 @@ const LL N=1e5+5;
 void solve(){
     LL n,m;
     cin>>n>>m;
-    if(n==m*(m+1)/2+1){
-        cout<<"YES"<<'\n';
-        LL tot=1;
-        for(int i=1;i<=m;i++){
-            LL pre=1;
-            for(int j=1;j<=i;j++){
-                tot++;
-                cout<<tot<<' '<<pre<<'\n';
-                pre=tot;
-            }
+    if(n<2*m||n>m*(m+1)/2+1){
+        cout<<"NO"<<'\n';
+        return;
+    }
+    cout<<"YES"<<'\n';
+    for(int i=2;i<=m+1;i++){
+        cout<<i-1<<' '<<i<<'\n';
+    }
+    LL tot=m+1;
+    LL need=m*(m+1)/2+1-n;
+    //printf("{%lld}",need);
+    for(LL i=1;i<=m-1;i++){
+        LL use=min(i-1,need);
+        need-=use;
+        LL pre=use+1;
+        //printf("{%lld,%lld,%lld}",i,use,need);
+        for(int j=1;j<=i-use;j++){
+            tot++;
+            cout<<tot<<' '<<pre<<'\n';
+            pre=tot;
         }
-        return;
     }
-    if(n%2==0&&m==n/2){
-        cout<<"YES"<<'\n';
-        for(int i=1;i<=n;i+=2){
-            cout<<i<<' '<<i+1<<'\n';
-            if(i==n-1)break;
-            cout<<i<<' '<<i+2<<'\n';
-        }        
-        return;
-    }else if(n%2==1&&m==n/2&&n>5){
-        cout<<"YES"<<'\n';
-        //printf("0");
-        int i=1;
-        for(;i<=n;i+=2){ 
-            cout<<i<<' '<<i+1<<'\n';
-            if(i==n-4)break;
-            cout<<i<<' '<<i+2<<'\n';
-        }        
-           
-        cout<<i-2<<' '<<i+2<<'\n';
-        cout<<i+2<<' '<<i+3<<'\n';
-        cout<<i+3<<' '<<i+4<<'\n';
-
-        return;
-    }
-    cout<<"NO"<<'\n';
 }
 int main(){
     //ios::sync_with_stdio(false),cin.tie(0),cout.tie(0);

@@ -1,16 +1,27 @@
-//洛谷3373区间加乘最大值最小值
 #include<bits/stdc++.h>
 using namespace std;
 using LL=long long;
 #define lc (u<<1)
 #define rc (u<<1|1)
+const LL mod=998244353;
+LL qpow(LL a,LL b){
+    LL ans=1;
+    while(b){
+        if(b&1)ans=(ans*a)%mod;
+        b=b>>1;
+        a=(a*a)%mod;
+    }
+    return ans;
+}
 struct SegTree{
     struct node{
         LL l,r;
         LL sum=0;
         LL maxn=0;
         LL minn=0;
+        LL sum2=0;
         LL add=0;//区间加
+        LL add2=0;
         LL mul=1;//区间乘
         LL setv=0;//区间赋值
         bool vis=false;//是否存在赋值标记
@@ -23,7 +34,8 @@ struct SegTree{
         tr.assign(n*4+5,node());
     }
     void pushup(LL u){
-        tr[u].sum=tr[lc].sum+tr[rc].sum;
+        tr[u].sum=(tr[lc].sum+tr[rc].sum)%mod;
+        tr[u].sum2=(tr[lc].sum2+tr[rc].sum2)%mod;
         tr[u].maxn=max(tr[lc].maxn,tr[rc].maxn);
         tr[u].minn=min(tr[lc].minn,tr[rc].minn);
     }
@@ -58,15 +70,19 @@ struct SegTree{
         pushup(u);
     }
     void applyadd(LL u,LL val){
-        tr[u].sum+=val*(tr[u].r-tr[u].l+1);
+        tr[u].sum2=(tr[u].sum2+2*tr[u].sum*val%mod+(tr[u].r-tr[u].l+1)*val%mod*val%mod)%mod;
+        //printf("{%lld,%lld,%lld}",tr[u].l,tr[u].r,tr[u].sum2);
+        tr[u].sum=(tr[u].sum+val*(tr[u].r-tr[u].l+1)%mod)%mod;
         tr[u].maxn+=val;
         tr[u].minn+=val;
         if(tr[u].vis){
             tr[u].setv+=val;
         }else{
-            tr[u].add+=val;
+            tr[u].add=(tr[u].add+val)%mod;
         }
     }
+
+
     void applymul(LL u,LL k){
         tr[u].sum=tr[u].sum*k;
         if(k>=0){
@@ -107,6 +123,7 @@ struct SegTree{
         }
         pushup(u);
     }
+
     void rangemul(LL u,LL l,LL r,LL k){//区间乘
         if(tr[u].l>=l&&tr[u].r<=r){
             applymul(u,k);
@@ -150,7 +167,22 @@ struct SegTree{
         if(r>=mid+1){
             sum+=querysum(rc,l,r);
         }
-        return sum;   
+        return sum%mod;   
+    }
+    LL querysum2(LL u,LL l,LL r){
+        if(tr[u].l>=l&&tr[u].r<=r){
+            return tr[u].sum2;
+        }        
+        pushdown(u);
+        LL mid=(tr[u].l+tr[u].r)/2;
+        LL sum2=0;
+        if(l<=mid){
+            sum2+=querysum2(lc,l,r);
+        }
+        if(r>=mid+1){
+            sum2+=querysum2(rc,l,r);
+        }
+        return sum2%mod;   
     }
     LL querymax(LL u,LL l,LL r){
         if(tr[u].l>=l&&tr[u].r<=r){
@@ -184,33 +216,29 @@ struct SegTree{
     }    
 };
 void solve(){
+    LL n,q;
+    cin>>n>>q;
+    vector<LL> a(n+1,0);
     SegTree tr1;
-    LL n,q,m;
-    cin>>n>>q>>m;
     tr1.init(n);
-    vector<LL> a(n+1);
-    for(int i=1;i<=n;i++){
-        cin>>a[i];
-    }
-    tr1.build(1,1,n,a);
+    tr1.build(1,1,n,a);   
     for(int i=1;i<=q;i++){
-        LL op;
-        cin>>op;
-        LL x,y,k;
-        if(op==1){
-            cin>>x>>y>>k;
-            tr1.rangemul(1,x,y,k);
-        }else if(op==2){
-            cin>>x>>y>>k;
-            tr1.rangeadd(1,x,y,k);
-        }else{
-            cin>>x>>y;
-            cout<<tr1.querysum(1,x,y)%m<<'\n';
-        }
-    }    
+        LL l,r,k;
+        cin>>l>>r>>k;
+        tr1.rangeadd(1,l,r,k);
+        LL sum=tr1.querysum(1,l,r);   
+        LL sum2=tr1.querysum2(1,l,r);   
+        LL pt1=sum*sum%mod;  
+        cout<<(pt1-sum2+mod)%mod*qpow(2,mod-2)%mod<<'\n';
+        //printf("{%lld,%lld}",sum,sum2);
+        
+        
+    }
 }
 int main(){
+    ios::sync_with_stdio(false),cin.tie(0),cout.tie(0);
     int t=1;
+    //cin>>t;
     while(t--){
         solve();
     }
