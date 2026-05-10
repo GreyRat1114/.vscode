@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+using LL=long long;
+const LL mod=1e9+7;
+void solve(){
+    string x,y;
+    cin>>x;
+    cin>>y;
+    LL n=x.size();
+    LL m=y.size();
+    
+}
+int main(){
+    //ios::sync_with_stdio(false),cin.tie(0),cout.tie(0);
+    int t=1;
+    //cin>>t;
+    while(t--){
+        solve();
+    }
+    return 0;
+}

@@ -1,0 +1,1 @@
+{"name":"Local: P3362","url":"d:\\Vscode\\.vscode\\luogu\\za\\P3362.cpp","tests":[{"id":1777712971550,"input":"10 2 2\n4 5\n8 10","output":""},{"id":1777712976899,"input":"1000 0 1\n720 720","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\luogu\\za\\P3362.cpp","group":"local","local":true}
