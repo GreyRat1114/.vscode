@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"d:\\Vscode\\.vscode\\abc\\458\\a.cpp","tests":[{"id":1779965081508,"input":"thermometer\n4\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\abc\\458\\a.cpp","group":"local","local":true}

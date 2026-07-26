@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"d:\\Vscode\\.vscode\\abc\\458\\b.cpp","tests":[{"id":1779965335217,"input":"4 5\n","output":""},{"id":1779965342288,"input":"1 4\n","output":""},{"id":1779965522552,"input":"1 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\abc\\458\\b.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"d:\\Vscode\\.vscode\\abc\\458\\c.cpp","tests":[{"id":1779966144625,"input":"ABCCA\n","output":""},{"id":1779966269982,"input":"XYZ\n","output":""},{"id":1779966277182,"input":"SMBCPROGRAMMINGCONTEST\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\abc\\458\\c.cpp","group":"local","local":true}

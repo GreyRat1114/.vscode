@@ -1,0 +1,1 @@
+{"name":"Local: 2239A","url":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2239A.cpp","tests":[{"id":1783061800104,"input":"5\n1\n1\n2\n1 2\n5\n1 4 5 2 6\n1\n1073741823\n3\n1 2 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2239A.cpp","group":"local","local":true}

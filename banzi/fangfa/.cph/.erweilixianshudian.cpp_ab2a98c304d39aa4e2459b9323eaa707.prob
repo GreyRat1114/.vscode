@@ -1,0 +1,1 @@
+{"name":"Local: erweilixianshudian","url":"d:\\Vscode\\.vscode\\banzi\\fangfa\\erweilixianshudian.cpp","tests":[{"id":1779283768723,"input":"6 4\n1 1 4 5 1 4\n1 6 3\n1 6 4\n1 1 4\n1 5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\banzi\\fangfa\\erweilixianshudian.cpp","group":"local","local":true}

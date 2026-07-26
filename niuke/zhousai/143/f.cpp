@@ -4,6 +4,12 @@ using LL=long long;
 const LL mod=1e9+7;
 const LL N=1e5+5;
 void solve(){
+    LL n,m,k;
+    cin>>n>>m>>k;
+    vector<pair<LL,LL>> a;
+    for(int i=1;i<=k;i++){
+        cin>>a[i].first>>a[i].second;
+    }
     
 }
 int main(){

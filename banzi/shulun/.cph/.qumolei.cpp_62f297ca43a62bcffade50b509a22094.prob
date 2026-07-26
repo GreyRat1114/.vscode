@@ -1,0 +1,1 @@
+{"name":"Local: qumolei","url":"d:\\Vscode\\.vscode\\banzi\\shulun\\qumolei.cpp","tests":[{"id":1778499083178,"input":"4\n1\n100000000000\n998244353\n998244354","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\banzi\\shulun\\qumolei.cpp","group":"local","local":true}

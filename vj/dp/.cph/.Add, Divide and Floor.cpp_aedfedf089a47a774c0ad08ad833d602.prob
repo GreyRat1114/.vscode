@@ -1,0 +1,1 @@
+{"name":"Local: Add, Divide and Floor","url":"d:\\Vscode\\.vscode\\vj\\dp\\Add, Divide and Floor.cpp","tests":[{"id":1781599948095,"input":"4\n1\n10\n2\n4 6\n6\n2 1 2 1 2 1\n2\n0 32\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\vj\\dp\\Add, Divide and Floor.cpp","group":"local","local":true}

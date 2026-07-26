@@ -1,0 +1,1 @@
+{"name":"Local: 2203D","url":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2203D.cpp","tests":[{"id":1783670094578,"input":"3\n9 3\n3 2 4 2 2 4 4 2 4\n6 7 12\n10 3\n3 2 5 4 2 5 3 4 4 4\n10 7 13\n1 5\n1\n1 2 3 4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2203D.cpp","group":"local","local":true}

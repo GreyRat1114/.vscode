@@ -11,7 +11,7 @@ struct node1{
     }
 };
 set<node1> odt;
-auto split(LL x){
+auto split(LL x){//切割区间
     auto it=odt.lower_bound({x,0,0});
     if(it!=odt.end()&&it->l==x){
         return it;
@@ -24,12 +24,12 @@ auto split(LL x){
     odt.insert({l,x-1,v});
     return odt.insert({x,r,v}).first;
 }
-void assign(LL l,LL r,LL v){
+void assign(LL l,LL r,LL v){//区间推平
     auto itr=split(r+1),itl=split(l);
     odt.erase(itl,itr);
     odt.insert({l,r,v});
 }
-void perform(LL l,LL r){
+void perform(LL l,LL r){//暴力遍历区间
     auto itr=split(r+1),itl=split(l);
     for(;itl!=itr;itl++){
         

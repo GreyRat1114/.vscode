@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"d:\\Vscode\\.vscode\\qoj\\2025shandong\\a.cpp","tests":[{"id":1779182364610,"input":"2\n6\n3 0\n4 0\n3 1\n5 3\n1 2\n3 1\n2\n1 1\n1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\qoj\\2025shandong\\a.cpp","group":"local","local":true}

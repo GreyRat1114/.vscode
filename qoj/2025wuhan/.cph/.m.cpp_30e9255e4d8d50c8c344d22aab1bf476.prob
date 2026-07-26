@@ -1,0 +1,1 @@
+{"name":"Local: m","url":"d:\\Vscode\\.vscode\\qoj\\2025wuhan\\m.cpp","tests":[{"id":1778677805352,"input":"2\n100\n1 1 1\n1 0 0\n0 1 0\n100-1-1 0\n1 0 0\n0 1 0","output":""},{"id":1778680398538,"input":"1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\qoj\\2025wuhan\\m.cpp","group":"local","local":true}

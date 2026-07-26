@@ -1,0 +1,1 @@
+{"name":"Local: 2228B","url":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2228B.cpp","tests":[{"id":1783067420468,"input":"4\n2 1 2 0\n4 3 2 1\n4 2 3 1\n16 8 4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\cf_\\banshua\\0-1600\\2228B.cpp","group":"local","local":true}

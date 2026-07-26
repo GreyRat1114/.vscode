@@ -1,0 +1,1 @@
+{"name":"Local: d","url":"d:\\Vscode\\.vscode\\niuke\\henan2026\\d.cpp","tests":[{"id":1784597197546,"input":"3 4\nS.#.\n##..\n..#T","output":""},{"id":1784597741445,"input":"3 3\nS##\n###\n##T","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\niuke\\henan2026\\d.cpp","group":"local","local":true}
