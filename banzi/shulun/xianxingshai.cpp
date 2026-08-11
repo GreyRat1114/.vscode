@@ -15,6 +15,10 @@ void get_prim(LL n){
         }
     }
 }
+void init(LL n){
+    not_prim.assign(n+10,0);
+    get_prim(n+1);
+}
 void solve(){
 
 }

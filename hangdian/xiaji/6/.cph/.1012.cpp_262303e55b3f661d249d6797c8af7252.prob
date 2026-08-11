@@ -1,0 +1,1 @@
+{"name":"Local: 1012","url":"d:\\Vscode\\.vscode\\hangdian\\xiaji\\6\\1012.cpp","tests":[{"id":1785993394748,"input":"3\n5\n-5 -1 -1 -2 -7\n1 1 5 3\n5\n5 5 5 9 8\n1 1 5 3\n5\n-1 -2 3 -5 4\n1 1 5 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\hangdian\\xiaji\\6\\1012.cpp","group":"local","local":true}

@@ -19,3 +19,25 @@
 //     }
 //     return x * f;
 // }
+
+// 关流
+// using i128=__int128_t;
+// using u128=__uint128_t;
+// ostream& operator<<(ostream& out,i128 x){
+//     if(x<0)out<<'-';
+//     u128 y=x<0?-(u128)x:(u128)x;
+//     if(!y)return out<<0;
+//     string s;
+//     while(y)s+=char('0'+y%10),y/=10;
+//     reverse(s.begin(),s.end());
+//     return out<<s;
+// }
+// istream& operator>>(istream& in,i128& x){
+//     string s;in>>s;
+//     x=0;
+//     int p=0,tag=1;
+//     if(s[0]=='-')tag=-1,p=1;
+//     for(;p<s.size();p++)x=x*10+s[p]-'0';
+//     x*=tag;
+//     return in;
+// }

@@ -1,0 +1,1 @@
+{"name":"Local: 2246D","url":"d:\\Vscode\\.vscode\\cf_\\boyi\\2246D.cpp","tests":[{"id":1786419662603,"input":"4\n3\n1 2 3\n4\n2 2 2 2\n5\n6 8 2 4 1\n8\n1 3 5 7 9 11 13 15","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Vscode\\.vscode\\cf_\\boyi\\2246D.cpp","group":"local","local":true}
