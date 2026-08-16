@@ -28,12 +28,14 @@ void solve(){
     }    
 //通用
 
-// bitset<N> f[N];
-
-// for(int k=1;k<=n;k++)
-//     for(int i=1;i<=n;i++)
-//         if(f[i][k])
-//             f[i]|=f[k];
+// bitset<N> a[N];
+    // for(int k=1;k<=n;k++){
+    //     for(int i=1;i<=n;i++){
+    //         if(a[i][k]){
+    //             a[i]|=a[k];
+    //         }
+    //     }
+    // }
 }
 int main(){
     int t=1;
