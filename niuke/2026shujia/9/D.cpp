@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+using namespace std;
+using LL=long long;
 using PII=std::pair<int,int>;
 const int N=2e5+10;
 int vis[N];
@@ -21,6 +23,7 @@ int main(){
         std::cin>>x>>s;
         vec[x].emplace_back(i,s);
     }
+    vector<map<LL,vector<LL>>> st1(n+1);
     std::vector<int>dep(n+1);
     std::vector<std::map<int,std::vector<int>>>st(n+1);
     dep[0]=0;
